@@ -1,0 +1,38 @@
+*{
+   margin: 20px 20px;
+}
+#mainheading{
+   text-align: center;
+   color: brown;
+   font-size: 72px;
+}
+
+#tablediv{
+   align-content: center; 
+   display: block;
+}
+
+#hiddentable{
+   border: 1px solid black;
+   border-radius: 10px;
+   width: 900px;
+   height: 900px;
+   text-align: center;
+   padding: 25px 25px;
+   margin-left: auto;
+   margin-right: auto;
+}
+td{
+   border: none;
+   border-radius: 10px;
+}
+#outputbox{
+   padding: 80px 300px;
+   margin: 0%;
+   
+}
+.button{
+   border-radius: 50%;
+   padding: 50px 60px;
+   font-size: 45px;
+}
