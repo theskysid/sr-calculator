@@ -1,49 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Calc</title>
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <h1 id="mainheading">Calculator</h1>
-   <hr>
-   <div id="tablediv">
-   <table id="hiddentable">
-      <tr><td colspan="4"><input type="text" name="outputbox" id="outputbox"></td></tr>
-      <tr>
-         <td><button class="button">7</button></td>
-         <td><button class="button">8</button></td>
-         <td><button class="button">9</button></td>
-         <td><button class="button">1</button></td>
-      </tr>
-      <tr>
-         <td><button class="button">7</button></td>
-         <td><button class="button">8</button></td>
-         <td><button class="button">9</button></td>
-         <td><button class="button">1</button></td>
-      </tr>
-      <tr>
-         <td><button class="button">4</button></td>
-         <td><button class="button">5</button></td>
-         <td><button class="button">6</button></td>
-         <td><button class="button">x</button></td>
-      </tr>
-      <tr>
-         <td><button class="button">1</button></td>
-         <td><button class="button">2</button></td>
-         <td><button class="button">3</button></td>
-         <td><button class="button">-</button></td>
-      </tr>
-      <tr>
-         <td><button class="button">.</button></td>
-         <td><button class="button">0</button></td>
-         <td><button class="button">=</button></td>
-         <td><button class="button">+</button></td>
-      </tr>
-   </table>
-   </div>
-   Siddhant Rastogi
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="mainheading">Calculator</h1>
+    <hr />
+    <div id="tablediv">
+      <table id="hiddentable">
+        <tr>
+          <td colspan="4"><input type="text" id="display" readonly /></td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              class="button"
+              onclick="
+            document.querySelector('#display').value = '';"
+            >
+              AC
+            </button>
+          </td>
+          <td>
+            <button class="button">9</button>
+          </td>
+          <td><button class="button" onclick="
+            currentDisplay = currentDisplay + '%';
+            document.querySelector('#display').value = currentDisplay;">%</button></td>
+          <td><button class="button" onclick="
+            currentDisplay = currentDisplay + '/';
+            document.querySelector('#display').value = currentDisplay;">/</button></td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              class="button"
+              onclick="
+            currentDisplay = currentDisplay + '7';
+            document.querySelector('#display').value = currentDisplay;"
+            >
+              7
+            </button>
+          </td>
+
+          <td>
+            <button
+              class="button"
+              onclick="
+            currentDisplay = currentDisplay + '8';
+            document.querySelector('#display').value = currentDisplay;"
+            >
+              8
+            </button>
+          </td>
+
+          <td>
+            <button
+              class="button"
+              onclick="
+            currentDisplay = currentDisplay + '9';
+            document.querySelector('#display').value = currentDisplay;"
+            >
+              9
+            </button>
+          </td>
+          <td><button class="button">*</button></td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              class="button"
+              onclick="
+            currentDisplay = currentDisplay + '4';
+            document.querySelector('#display').value = currentDisplay;"
+            >
+              4
+            </button>
+          </td>
+          <td>
+            <button
+              class="button"
+              onclick="
+            currentDisplay = currentDisplay + '5';
+            document.querySelector('#display').value = currentDisplay;"
+            >
+              5
+            </button>
+          </td>
+          <td>
+            <button
+              class="button"
+              onclick="
+            currentDisplay = currentDisplay + '6';
+            document.querySelector('#display').value = currentDisplay;"
+            >
+              6
+            </button>
+          </td>
+          <td>
+            <button
+              class="button"
+              onclick="
+            currentDisplay = currentDisplay + '-';
+            document.querySelector('#display').value = currentDisplay;"
+            >
+              -
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              class="button"
+              onclick="
+            currentDisplay = currentDisplay + '1';
+            document.querySelector('#display').value = currentDisplay;"
+            >
+              1
+            </button>
+          </td>
+          <td>
+            <button
+              class="button"
+              onclick="
+            currentDisplay = currentDisplay + '2';
+            document.querySelector('#display').value = currentDisplay;"
+            >
+              2
+            </button>
+          </td>
+          <td>
+            <button
+              class="button"
+              onclick="
+            currentDisplay = currentDisplay + '3';
+            document.querySelector('#display').value = currentDisplay;"
+            >
+              3
+            </button>
+          </td>
+          <td>
+            <button
+              class="button"
+              onclick="
+            currentDisplay = currentDisplay + '+';
+            document.querySelector('#display').value = currentDisplay;"
+            >
+              +
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="button">Cal</button></td>
+          <td>
+            <button
+              class="button"
+              onclick="
+            currentDisplay = currentDisplay + '0';
+            document.querySelector('#display').value = currentDisplay;"
+            >
+              0
+            </button>
+          </td>
+          <td>
+            <button
+              class="button"
+              onclick="
+            currentDisplay = currentDisplay + '.';
+            document.querySelector('#display').value = currentDisplay;"
+            >
+              .
+            </button>
+          </td>
+          <td><button class="button" onclick="
+            currentDisplay = currentDisplay + '9';
+            document.querySelector('#display').value = eval(currentDisplay);">=</button></td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      let currentDisplay = "";
+    </script>
+  </body>
 </html>

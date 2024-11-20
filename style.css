@@ -1,38 +1,45 @@
-*{
-   margin: 20px 20px;
+* {
+  margin: 20px 20px;
 }
-#mainheading{
-   text-align: center;
-   color: brown;
-   font-size: 72px;
-}
-
-#tablediv{
-   align-content: center; 
-   display: block;
+#mainheading {
+  text-align: center;
+  color: brown;
+  font-size: 72px;
 }
 
-#hiddentable{
-   border: 1px solid black;
-   border-radius: 10px;
-   width: 900px;
-   height: 900px;
-   text-align: center;
-   padding: 25px 25px;
-   margin-left: auto;
-   margin-right: auto;
+#tablediv {
+  align-content: center;
+  display: block;
 }
-td{
-   border: none;
-   border-radius: 10px;
+
+#hiddentable {
+  margin-right: auto;
+  margin-left: auto;
+
+  border: 1px solid black;
+  border-radius: 10px;
+
+  width: 250px;
+  padding: 3px 3px;
+
+  text-align: center;
+  background-color: rgb(5, 5, 5);
 }
-#outputbox{
-   padding: 80px 300px;
-   margin: 0%;
-   
+
+#display {
+  width: 300px;
+  height: 100px;
+  font-size: 20px;
 }
-.button{
-   border-radius: 50%;
-   padding: 50px 60px;
-   font-size: 45px;
+td {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.button {
+  width: 45px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 18px;
 }
