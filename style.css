@@ -1,6 +1,6 @@
-* {
+ /*{
   margin: 20px 20px;
-}
+} */
 #mainheading {
   text-align: center;
   color: brown;
@@ -10,6 +10,7 @@
 #tablediv {
   align-content: center;
   display: block;
+  
 }
 
 #hiddentable {
@@ -24,6 +25,7 @@
 
   text-align: center;
   background-color: rgb(5, 5, 5);
+  
 }
 
 #display {
@@ -42,4 +44,12 @@ td {
   border-radius: 5px;
   border: 1px solid black;
   font-size: 18px;
+}
+body{
+  background-image: url(https://imgs.search.brave.com/96axqNZp9GIsVy8by-S1tsrW1XmjEZmIHWf5kTBn-O8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2VmLzc2/LzgzL2VmNzY4MzU4/YjY2MDkwYzg4ODZj/ZTM0MWYwNTlhZTVi/LmpwZw);
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+   
+
 }
